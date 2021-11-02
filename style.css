@@ -1,6 +1,3 @@
-/* a minimalist set of CSS resets */
-
-/* default to border-box */
 html {
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvH-DlIGlHTNuHzqn7NuR2SgTRiV8b4f8nQ&usqp=CAU');
   box-sizing: border-box;
@@ -13,7 +10,7 @@ html {
 body {
     background: #212121;
 }
-.clock {
+#DigitalCLOCK {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -31,13 +28,6 @@ body,h1 {
   margin: 10rem;
   font-family: cursive;
   line-height: 1.5;
-}
-  body, p {
-    font-size: 20px;
-    margin: 20rem;
-    font-family: "Times New Roman";
-    line-height: 1.5;
-  }
 }
 
 
