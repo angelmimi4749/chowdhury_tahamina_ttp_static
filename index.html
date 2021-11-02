@@ -15,6 +15,25 @@
       Hi! My name is Tahamina Chowdhury. My favorite hobbies are reading/writing novels and traveling.
       <div id="DigitalCLOCK"></div>
     </h1>
-    <script src="function.js"></script>
+    <script> 
+      function showTime() {
+  var date = new Date();
+  var h = date.getHours();
+  var m = date.getMinutes();
+  var s = date.getSeconds();
+  var session = h < 12? "AM":"PM";
+  h = h > 12? h-12: h;
+  if (h == 0) {
+    h = 12;
+  }
+  h = h < 10 ? "0" + h : h;
+  m = m < 10 ? "0" + m : m;
+  s = s < 10 ? "0" + s : s;
+
+  var time = h + ":" + m + ":" + s + " " + session;
+  document.getElementById("DigitalCLOCK").innerHTML = time;
+  setTimeout(showTime, 500);
+}
+</script>
   </body>
 </html>
